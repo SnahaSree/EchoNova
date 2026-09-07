@@ -4,7 +4,7 @@
 
 EchoNova is an AI-powered interactive curiosity and knowledge exploration platform.
 
-Instead of returning traditional search results, NOVA transforms knowledge into an interactive visual universe of concepts, relationships, timelines, explanations, discoveries, and conversations.
+Instead of returning traditional search results, EchoNova transforms knowledge into an interactive visual universe of concepts, relationships, timelines, explanations, discoveries, and conversations.
 
 ---
 
