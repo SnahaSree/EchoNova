@@ -5,7 +5,6 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
-    """Application settings."""
     project_name: str = Field(default="EchoNova")
     environment: str = Field(default="development")
 
@@ -15,6 +14,8 @@ class Settings(BaseSettings):
     jwt_secret_key: str
     jwt_algorithm: str = Field(default="HS256")
     access_token_expire_minutes: int = Field(default=30, gt=0)
+
+    refresh_token_expire_days: int = Field(default=7, gt=0)
 
     cors_origins: str = Field(default="http://localhost:5173")
 
@@ -32,5 +33,4 @@ class Settings(BaseSettings):
 
 @lru_cache
 def get_settings() -> Settings:
-    """Get application settings."""
     return Settings()
