@@ -6,6 +6,7 @@ from app.api.v1 import (
     graph,
     relationships,
     users,
+    search,
 )
 
 
@@ -20,3 +21,4 @@ api_router.include_router(
     relationships.router
 )
 api_router.include_router(graph.router)
+api_router.include_router(search.router)
